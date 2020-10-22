@@ -21,7 +21,7 @@ text #2b2b2b
   --grid-color: lightgray;
 }
 
-*box-sizing {
+* {
   box-sizing: border-box;
 }
 
