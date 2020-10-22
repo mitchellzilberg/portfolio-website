@@ -1,20 +1,18 @@
-/* Colors
-text #2b2b2b
-/* primary #F6DBD5 */
-/* secondary #004A21/*  */
+/* font color: #3f3f3f
+    background color #dadada
+    font-family2 :'Roboto Mono', monospace;*/
 
-/* $primary-color: #F6DBD5; */
 
 
 :root {
-  --primary-color: #F6DBD5;
-  --secondary-color: #004A21;
+  --primary-color: #dadada;
+  --secondary-color: #3f3f3f;
   --button-text-color: white;
   --dark-grey: #2b2b2b;
-  --font-family:'Roboto Mono', monospace;
+  --font-family:'Roboto Slab', serif;
   --button-secondary-color: #e0b354;
   --button-secondary-text-color: #2b2b2b;
-  --link-visited-color: #05676e;
+  --link-visited-color: black;
   --link-active-color: #489c79;
   --sun-yellow-color: #edc655;
   --sun-orange-color: #f76414;
@@ -27,6 +25,7 @@ text #2b2b2b
 
 body {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: var(--font-family);
   font-weight: 100;
   line-height: 1;
@@ -36,7 +35,7 @@ body {
 
 h1 {
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 900;
   font-size: 50px;
 }
 
@@ -103,6 +102,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 .page-header__logo {
   width: 200px;
   height: 70px;
+  padding: 10px;
 }
 
 .button__secondary {
@@ -110,8 +110,16 @@ button:hover, .button:hover, button:focus, .button:focus {
   color: var(--button-secondary-text-color);
 }
 
-.navigation-list__item--active {
+.navigation-list__item {
   text-decoration: none;
+}
+
+.navigation-list__item:hover {
+  text-decoration: underline;
+}
+
+.navigation-list__item--active {
+  text-decoration: underline;
 }
 
 .table-cell {

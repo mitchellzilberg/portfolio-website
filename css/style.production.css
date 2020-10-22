@@ -5,14 +5,30 @@
 * Browsers: last 4 version
 */
 
-*box-sizing {
+:root {
+  --primary-color: #dadada;
+  --secondary-color: #3f3f3f;
+  --button-text-color: white;
+  --dark-grey: #2b2b2b;
+  --font-family:'Roboto Slab', serif;
+  --button-secondary-color: #e0b354;
+  --button-secondary-text-color: #2b2b2b;
+  --link-visited-color: black;
+  --link-active-color: #489c79;
+  --sun-yellow-color: #edc655;
+  --sun-orange-color: #f76414;
+  --grid-color: lightgray;
+}
+
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: #F6DBD5;
-  font-family: 'Roboto Mono', monospace;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
   font-weight: 100;
   line-height: 1;
   width:100%;
@@ -20,8 +36,8 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500;
+  font-family: var(--font-family);
+  font-weight: 900;
   font-size: 50px;
 }
 
@@ -30,7 +46,7 @@ h1 {
 }
 
 a {
-  color: #004A21;
+  color: var(--secondary-color);
 }
 
 /* a {
@@ -38,7 +54,7 @@ a {
 } */
 
 a:visited {
-  color: #05676e;
+  color: var(--link-visited-color);
 }
 
 a:hover, a:focus {
@@ -46,33 +62,16 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: #489c79;
+  color: var(--link-active-color);
 }
 
-button {
+button, .button {
   border: none;
   display: inline-block;
   font-family: inherit;
   font-weight: 300;
-  background-color: #004A21;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-
-.button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-weight: 300;
-  background-color: #004A21;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
   text-decoration: none;
   font-size: 16px;
   padding: 10px;
@@ -90,32 +89,41 @@ button:hover, .button:hover, button:focus, .button:focus {
 
 .cv-button {
   font-weight: 300;
-  color: white;
+  color: var(--button-text-color);
   opacity: 100%;
 }
 
 .cv-button:active {
-  color: white;
+  color: var(--button-text-color);
   opacity: 100%;
 }
 
 .cv-button:visited {
-  color: white;
+  color: var(--button-text-color);
   opacity: 100%;
 }
 
 .page-header__logo {
   width: 200px;
   height: 70px;
+  padding: 10px;
 }
 
 .button__secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
+  background-color: var(--button-secondary-color);
+  color: var(--button-secondary-text-color);
+}
+
+.navigation-list__item {
+  text-decoration: none;
+}
+
+.navigation-list__item:hover {
+  text-decoration: underline;
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .table-cell {
@@ -159,19 +167,19 @@ button:hover, .button:hover, button:focus, .button:focus {
 
 @-webkit-keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: var(--sun-yellow-color);
   }
   100% {
-    fill: #f76414;
+    fill: var(--sun-orange-color);
   }
 }
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: var(--sun-yellow-color);
   }
   100% {
-    fill: #f76414;
+    fill: var(--sun-orange-color);
   }
 }
 
@@ -285,7 +293,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: var(--grid-color);
   padding: 0 30px 30px 30px;
   width: auto;
   min-height: auto;
