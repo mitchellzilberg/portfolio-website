@@ -28,7 +28,7 @@ body {
   color: var(--secondary-color);
   font-family: var(--font-family);
   font-weight: 100;
-  line-height: 1.5;
+  line-height: 1;
   width:100%;
   text-align: center;
 }
