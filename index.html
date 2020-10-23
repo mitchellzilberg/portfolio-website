@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css>
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="icon" href="img/wikipedia.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -32,23 +33,24 @@
         </ul>
       </nav>
     </header>
-    <div class="profile">
-      <img class="profile__portrait" src="img/profile-pic.jpg" alt="profile image">
-      <h1>Hello!</h1>
-      <p>My name is Mitchell Zilberg. I am a web developer from Ottawa.</p>
-      <a href="#">Check out some of my code</a>
-    </div>
-    <div class="buttons-link">
-      <a href="#">Default Link</a>
-      <button type="button">Default Button</button>
-      <button class="button__secondary">Secondary Button</button>
-    </div>
+      <div class="profile">
+        <div class="image">
+          <img class="profile__portrait" src="img/profile-pic.jpg" alt="profile image">
+        </div>
+          <h1>Hello!</h1>
+          <p>My name is Mitchell Zilberg. <br> I am a web developer & content creator <br>from Ottawa.</p>
+          <div class="buttons-link">
+            <a href="work.html" class="button" id="code-button">My Code</a>
+            <a href="about.html" class="button" id="about-button">About Me</a>
+          </div>
+      </div>
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/twitter-icon.svg" alt="twitter logo">
-        <img src="img/ig-icon.svg" alt="instagram logo">
-        <img src="img/fb-icon.svg" alt="facebook logo">
+        <img class="social-media-img" src="img/linkedin-icon.png" alt="linkedin-logo">
+        <img class="social-media-img" src="img/github-icon.png" alt="github logo">
+        <img class="social-media-img" src="img/ig-icon.svg" alt="instagram logo">
+        <img class="social-media-img" src="img/fb-icon.png" alt="facebook logo">
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
