@@ -5,40 +5,29 @@
 * Browsers: last 4 version
 */
 
-:root {
-  --primary-color: #dadada;
-  --secondary-color: #3f3f3f;
-  --button-text-color: white;
-  --dark-grey: #2b2b2b;
-  --font-family:'Roboto Slab', serif;
-  --button-secondary-color: #e0b354;
-  --button-secondary-text-color: #2b2b2b;
-  --link-visited-color: black;
-  --link-active-color: #489c79;
-  --sun-yellow-color: #edc655;
-  --sun-orange-color: #f76414;
-  --grid-color: lightgray;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-family: var(--font-family);
+  background-color: #e5e5e5;
+  color: #3f3f3f;
+  font-family: 'Roboto Slab', serif;
   font-weight: 100;
-  line-height: 1;
+  line-height: 1.5;
   width:100%;
   text-align: center;
 }
 
 h1 {
-  font-family: var(--font-family);
+  font-family: 'Roboto Slab', serif;
   font-weight: 900;
   font-size: 50px;
+}
+
+p {
+  font-weight: 300;
 }
 
 .navbar {
@@ -46,7 +35,7 @@ h1 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: #3f3f3f;
 }
 
 /* a {
@@ -54,7 +43,7 @@ a {
 } */
 
 a:visited {
-  color: var(--link-visited-color);
+  color: black;
 }
 
 a:hover, a:focus {
@@ -62,16 +51,33 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: var(--link-active-color);
+  color: #489c79;
 }
 
-button, .button {
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
   font-weight: 300;
-  background-color: var(--secondary-color);
-  color: var(--button-text-color);
+  background-color: #3f3f3f;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 300;
+  background-color: #3f3f3f;
+  color: white;
   text-decoration: none;
   font-size: 16px;
   padding: 10px;
@@ -87,43 +93,45 @@ button:hover, .button:hover, button:focus, .button:focus {
   opacity: 0.8;
 }
 
+.code-button {
+  color: white;
+  font-weight: 300;
+}
+
 .cv-button {
   font-weight: 300;
-  color: var(--button-text-color);
+  color: white;
   opacity: 100%;
 }
 
 .cv-button:active {
-  color: var(--button-text-color);
+  color: white;
   opacity: 100%;
 }
 
 .cv-button:visited {
-  color: var(--button-text-color);
+  color: white;
   opacity: 100%;
 }
 
 .page-header__logo {
-  width: 200px;
-  height: 70px;
+  width: 180px;
+  height: 60px;
   padding: 10px;
-}
-
-.button__secondary {
-  background-color: var(--button-secondary-color);
-  color: var(--button-secondary-text-color);
 }
 
 .navigation-list__item {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .navigation-list__item:hover {
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
 .navigation-list__item--active {
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
 .table-cell {
@@ -152,6 +160,7 @@ button:hover, .button:hover, button:focus, .button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 100px;
 }
 
 .about-table {
@@ -165,21 +174,26 @@ button:hover, .button:hover, button:focus, .button:focus {
   width:600px;
 }
 
+.social-media-img {
+  width: 30px;
+  margin: 5px;
+}
+
 @-webkit-keyframes color-change {
   0% {
-    fill: var(--sun-yellow-color);
+    fill: #edc655;
   }
   100% {
-    fill: var(--sun-orange-color);
+    fill: #f76414;
   }
 }
 
 @keyframes color-change {
   0% {
-    fill: var(--sun-yellow-color);
+    fill: #edc655;
   }
   100% {
-    fill: var(--sun-orange-color);
+    fill: #f76414;
   }
 }
 
@@ -239,12 +253,24 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .profile {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 700px;
 }
 
 .buttons-link {
-  clear: both;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#code-button {
+  color: white;
+  width: 150px;
+}
+
+#about-button {
+  background-color: #e0b354;
+  color: #2b2b2b;
+  width: 150px;
 }
 
 .page-header {
@@ -273,6 +299,7 @@ button:hover, .button:hover, button:focus, .button:focus {
   list-style-type: none;
   display: inline-block;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .grid__item {
@@ -293,7 +320,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .grid__item {
-  background-color: var(--grid-color);
+  background-color: lightgray;
   padding: 0 30px 30px 30px;
   width: auto;
   min-height: auto;

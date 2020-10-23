@@ -1,11 +1,11 @@
 /* font color: #3f3f3f
-    background color #dadada
+    background color #e5e5e5
     font-family2 :'Roboto Mono', monospace;*/
 
 
 
 :root {
-  --primary-color: #dadada;
+  --primary-color: #e5e5e5;
   --secondary-color: #3f3f3f;
   --button-text-color: white;
   --dark-grey: #2b2b2b;
@@ -28,7 +28,7 @@ body {
   color: var(--secondary-color);
   font-family: var(--font-family);
   font-weight: 100;
-  line-height: 1;
+  line-height: 1.5;
   width:100%;
   text-align: center;
 }
@@ -37,6 +37,10 @@ h1 {
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 50px;
+}
+
+p {
+  font-weight: 300;
 }
 
 .navbar {
@@ -83,6 +87,11 @@ button:hover, .button:hover, button:focus, .button:focus {
   opacity: 0.8;
 }
 
+.code-button {
+  color: var(--button-text-color);
+  font-weight: 300;
+}
+
 .cv-button {
   font-weight: 300;
   color: var(--button-text-color);
@@ -100,26 +109,23 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .page-header__logo {
-  width: 200px;
-  height: 70px;
+  width: 180px;
+  height: 60px;
   padding: 10px;
-}
-
-.button__secondary {
-  background-color: var(--button-secondary-color);
-  color: var(--button-secondary-text-color);
 }
 
 .navigation-list__item {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .navigation-list__item:hover {
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
 .navigation-list__item--active {
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
 .table-cell {
@@ -143,6 +149,7 @@ button:hover, .button:hover, button:focus, .button:focus {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 100px;
 }
 
 .about-table {
@@ -154,6 +161,11 @@ button:hover, .button:hover, button:focus, .button:focus {
   margin: 40px auto;
   display: block;
   width:600px;
+}
+
+.social-media-img {
+  width: 30px;
+  margin: 5px;
 }
 
 @keyframes color-change {
@@ -201,12 +213,24 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .profile {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 700px;
 }
 
 .buttons-link {
-  clear: both;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#code-button {
+  color: white;
+  width: 150px;
+}
+
+#about-button {
+  background-color: var(--button-secondary-color);
+  color: var(--button-secondary-text-color);
+  width: 150px;
 }
 
 .page-header {
@@ -229,6 +253,7 @@ button:hover, .button:hover, button:focus, .button:focus {
   list-style-type: none;
   display: inline-block;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .grid__item {
