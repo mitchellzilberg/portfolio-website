@@ -137,6 +137,10 @@ button:hover, .button:hover, button:focus, .button:focus {
   line-height: 1.5;
 }
 
+.input-wrapper {
+  margin: 15px auto;
+}
+
 .profile__portrait {
   width: 250px;
   float: left;
