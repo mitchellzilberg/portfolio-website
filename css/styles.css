@@ -86,7 +86,7 @@ a {
 
 .buttons-link {
   margin-top: 40px;
-  text-align: center;
+  text-align: right;
 }
 
 /* INDEX PAGE */
@@ -119,6 +119,8 @@ a {
 
 .index-container {
   padding-top: 30px;
+  margin-left: auto;
+  text-align: right;
 }
 
 .index-h1 {
@@ -127,7 +129,7 @@ a {
 }
 
 .index-p {
-  text-align: left;
+  text-align: right;
   line-height: 1.5;
   padding-top: 5px;
   padding-left: 310px;
