@@ -54,6 +54,40 @@
   font-size: 20px;
   text-align: left;
 }
+
+.logo-mitchell-about {
+  float: left;
+  padding-top: 0;
+  padding-left: 5px;
+  margin-left: 0;
+  font-weight: 900;
+  font-size: 20px;
+  
+}
+
+.logo-mitchell-about:hover {
+  text-decoration: none;
+  color: var(--primary-color)
+  /* color: var(--third-color); */
+}
+
+.navigation-list-about {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.navigation-list-about:hover {
+  text-decoration: none;
+}
+
+.navigation-list__item-about:hover {
+  text-decoration: none;
+}
+
+
+
 /* END OF NAVBAR */
 
 body {

@@ -4,47 +4,122 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About</title>
-    <!-- <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-        crossorigin="anonymous"
-      /> -->
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css> <link
-      rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   
   <body>
-    <header class="page-header">
-      <a href="index.html" class="logo-mitchell">
-        MITCHELL ZILBERG
-      </a>
+    <header class="page-header-about">
       <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
+        <ul role="menubar" class="navigation-list navigation-list-about">
+          <a href="index.html" class="logo-mitchell-about">
+            MITCHELL ZILBERG
+          </a>
           <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item-about">Home</a>
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
+            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item-about navigation-list__item--active">About</a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item-about">Work</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item-about">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
+    <!-- CAROUSEL -->
+
+    <style>
+      .carousel {
+        background-color: rgb(184, 183, 183);
+        height: 400px;
+        margin-top: 40px;
+        padding: 60px 0;
+      }
+      .carousel-inner {
+        padding: 0 100px;
+      }
+      .carousel-h1 {
+        color: #265c70;
+        text-align: center;
+      }
+      .carousel-p {
+        padding-top: 20px;
+        color:#525664;
+        font-size: 1.5rem;
+        /* width: 60%; */
+      }
+    </style>
+
     <div class="about-container">
       <h1 class="about-h1">Who Am I?</h1>
-      <div class="profile-image-about">
-        <img class="profile-pic-about" src="img/profile-pic.jpg" alt="profile image" />
-      </div> 
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1 class="carousel-h1">My Background</h1>
+            <p class="carousel-p">
+              I’m a television-broadcasting graduate and multimedia content creator with newly
+              acquired skills as a web developer.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h1 class="carousel-h1">My Tech Skills</h1>
+            <p class="carousel-p">
+              HTML5 and CSS3. <br />
+              Javascript MERN stack (MongoDB, Express, React.js, Node.js). <br />
+              Javascript front end frameworks and libraries such as
+              Bootstrap and JQuery. <br />
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h1 class="carousel-h1">My Multimedia Skills</h1>
+            <p class="carousel-p">
+              Adobe CC <br />
+              Davinci Resolve <br />
+              Photography & Videography <br />
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h1 class="carousel-h1">My Hobbies</h1>
+            <p class="carousel-p">
+              Baseball <br />
+              Writing & performing stand-up comedy <br />
+              Cooking <br />
+            </p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+  </div>
+
+    
+
+    <!-- <div class="about-container">
       <p class="about-p-1">
           I’m a television-broadcasting and multimedia specialist with newly
           acquired skills as a web developer. I have experience in project-based work with strict deadlines and collaborating as a member of a team. I work well under pressure and have a passion for technology and problem solving which is what drew me into tech. My goal is to expand my skills as a web developer and to incorporate them into my new career. <br />
@@ -68,7 +143,7 @@
       </p>
       <p class="about-p-4"></p>
           Feel free to contact me for full-time and/or internship opportunities in the Ottawa- Gatineau area or remotely. 
-      </p>
+      </p> -->
       <div class="about-button">
         <a href="files/Zilberg-Mitchell-Resume.pdf" class="button" download target="_blank">
           My Resume
@@ -129,5 +204,9 @@
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
